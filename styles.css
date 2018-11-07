@@ -1,0 +1,557 @@
+/* BODY */
+body{
+    background-color: #F5F5F5;
+}
+h1{
+    color: #5D5C5C;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+/* Nav-bar */
+.navbar-brand{
+    
+    font-family: Avenir;
+    font-weight: 900;
+    font-size: 21px;
+    margin-right: 50px;
+    
+}
+/* Nav-link */
+.nav-link{
+    font-family: Avenir;
+    font-size: 17px;
+    font-weight: 300;
+    margin-right: 20px;
+    letter-spacing: 1px;
+}
+
+/* button Log in */
+.login{
+    
+    font-weight: 600;
+    
+    border-radius: 40px;
+    height: 40px;
+    width: 131px;
+    margin-top: 20px !important;
+}
+.login:hover{
+    color: white;
+}
+    
+
+    /* Jumbotron */
+    .jumbotron{
+        background-image: url(img/bgandcp.png);
+        background-size: cover;
+        height: 445px;
+        }
+
+    .jumbotron .display-4{
+        color:white;
+        font-size: 42px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-top: 100px;
+        padding-left: 20px; 
+        
+         }
+.jumbotron .lead {
+    color: white !important;
+    float: left;
+    margin: 20px;
+    font-size: 12px;
+    margin-top: 30px;
+    opacity: 100;
+    
+
+
+}
+
+.jumbotron .lead span{
+    margin-right: -20px;
+    position: relative;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: rgb(255, 255,255, 0.2);
+    background-size: cover;
+    box-shadow: 1px 1px 1px rgb(0,0,0, 0.1);
+   
+}
+
+/* path jumbotron */
+.path{
+  position: relative;
+  height: 152px;
+  width: 2000px !important;
+  margin-top: 50px;
+  
+}
+
+/* Song List */
+
+    
+/* Card */
+.card-columns .card {
+    width: 0px;
+    float: left;
+    
+}
+.card .card-img{
+
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+.card2 .card-img{
+    
+    height: 200px;
+    width: 200px;
+    
+}
+/* -------- Dekstop View -------- */
+@media (min-width: 992px) { 
+
+
+    /* Nav-bar */
+    .navbar-brand, .nav-link{
+        color: white !important;
+        margin-top: 20px;
+    }
+
+    /* Search field */
+    .srcbg{
+        border: none;
+        background-size: 168px;
+        border-radius: 40px;
+        background-color: rgb(255, 255,255, 0.2);
+        margin-top: 20px;
+        }
+    
+        .srcbg::placeholder{
+        color: white;
+        padding: 20px;
+        }
+
+    /* Button Login */
+    .login{
+        color: white;
+        border-color: white;
+    }
+
+    /* Jumbotron */
+    .jumbotron{
+        margin-top: -75px;
+    }
+
+    .jumbotron .display-4{
+        font-size: 72px;
+    }
+    .jumbotron .display-4{
+        color:white;
+        font-size: 72px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-top: 100px;
+        padding-left: 20px; 
+        
+    }
+    .jumbotron .lead {
+        color: white !important;
+        float: left;
+        margin: 20px;
+        font-size: 18px;
+        margin-top: 30px;
+        opacity: 100;
+    
+    }
+    /* Akhir Jumbotron */
+
+    /* path */
+    .path{
+        margin-top: -40px;
+    }
+    /* akhir path */
+
+    /* songlist */
+    .songlist{
+        padding-left: 50px;
+        position: relative;
+       background-color: #F5F5F5;
+    }
+    /* akhir songlist */
+    .delay{
+      animation-delay: 1s;
+      animation-duration: 1s;
+    }
+}
+/* ------ AKHIR DEKSTOP VIEW ---------- */
+
+    /* CARD */
+   
+
+/*section*/
+.card__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+  }
+.top-movies {
+  font-size: 0;
+  background: #c0c6c9;
+  background: #F5F5F5;
+  padding: 45px 0;
+  box-shadow: inset 0 -5px 8px 0 rgba(0, 0, 0, 0.05);
+  font-family: system, -apple-system, ".SFNSDisplay-Regular", HelveticaNeue, LucidaGrande;
+}
+
+/*h1*/
+.top-movies__title {
+  font-size: 22px;
+  color: #444e50;
+  margin: 0 0 14px;
+  text-shadow: 0 2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.section-content {
+  width: 94%;
+  padding-left: 40px;
+}
+@media only screen and (min-width: 1022px) {
+  .section-content {
+    width: 100%;
+    /* max-width: 960px; */
+  }
+}
+
+/*article*/
+.card {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 220px;
+  margin: 20px auto;
+  transition: box-shadow 0.15s ease-out, transform 0.25s ease;
+  perspective: 500px;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: none;
+}
+.card.hover--ending {
+  transition: box-shadow 0.5s ease;
+}
+@media only screen and (min-width: 540px) {
+  .card {
+    display: inline-block;
+  }
+}
+.card + .card {
+  margin: 45px auto 0;
+}
+@media only screen and (min-width: 540px) {
+  .card + .card {
+    margin: 0 0 0 25px;
+  }
+}
+
+/*span*/
+
+
+/*a*/
+.card__link {
+  display: block;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  transform-origin: center center;
+  transform-style: preserve-3d;
+}
+
+/*img*/
+
+
+/*h2*/
+.card__title {
+  font-family: Avenir;
+  font-size: 18px;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  text-align: left;
+  color: #5D5C5C;
+  position: absolute;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
+  /*article*/
+}
+.card:hover .card__title {
+  opacity: 0.8;
+}
+
+       
+   /* Modal */
+   .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+  
+  #formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  
+  
+  /* TABS */
+  
+  h2.inactive {
+    color: #cccccc;
+  }
+  
+  h2.active {
+    color: #0d0d0d;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+  
+  
+  /* FORM TYPOGRAPHY*/
+  
+  input[type=button], input[type=submit], input[type=reset]  {
+    background-color: #16a8f1;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+    background-color: #F0A087;
+  }
+  
+  input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  
+  input[type=text] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+  input[type=password] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  input[type=text]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+  input[type=text]:placeholder {
+    color: #cccccc;
+  }
+  
+  
+  
+  /* ANIMATIONS */
+  
+  /* Simple CSS3 Fade-in-down Animation */
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+  .fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+  }
+  
+  .fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  .fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  .underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: width 0.2s;
+  }
+  
+  .underlineHover:hover {
+    color: #0d0d0d;
+  }
+  
+  .underlineHover:hover:after{
+    width: 100%;
+  }
+  
+  
+  
+  /* OTHERS */
+  
+  *:focus {
+      outline: none;
+  } 
+  
+  #icon {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    width:60%;
+  }
+  
+ 

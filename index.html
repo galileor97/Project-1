@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animate.css">
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jQuery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Soundproject</title>
+  </head>
+  <body>
+    <!-- Nav-bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="animated fadeIn container">
+                <a class="navbar-brand" href="#">Soundproject</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">News <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Music</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Event</a>
+                        </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="#">Radio</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 ">
+                    <input class="form-control mr-sm-2 srcbg" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0 login" id="myBtn" data-toggle="modal" data-target="#myModal" >Log in</button>
+                </form>
+                </div>
+            </div>
+          </nav>
+    <!-- Akhir Nav-bar -->
+
+
+    <!-- Modal -->
+   
+
+  <div class="modal fade fadeInDown" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content" id="formContent">
+                <div class="fadeIn first">
+                        <img src="img/Soundsproject.png" id="icon" alt="User Icon" />
+                      </div>
+                  
+                      <!-- Login Form -->
+                      <form>
+                        <input type="text" id="test1" class="fadeIn second" name="login" placeholder="Username">
+                        <input type="password" id="test2" class="fadeIn third" name="login" placeholder="password">
+                        <input type="submit" class="fadeIn fourth" value="Log In" style="margin-top:20px" onclick=validate()>
+                      </form>
+                  
+                      <!-- Remind Passowrd -->
+                      <div id="formFooter">
+                        <a class="underlineHover" href="#">Forgot Password?</a>
+                      </div>
+          </div>
+          
+        </div>
+      </div>
+    <!-- Akhir Modal -->
+
+
+
+    
+    <!-- Image -->
+    <div class=" jumbotron jumbotron-fluid ">
+            <div class="container">
+              <h1 class="display-4 animated fadeIn">Cold Play</h1>
+              <p class="lead animated zoomIn"><span>pop rock</span></p>
+              <p class="lead animated zoomIn"><span>electronic</span></p>
+              <p class="lead animated zoomIn"><span>alternative rock</span></p>
+              
+            </div>
+            <img src="img/Path2.png" class="img-fluid path animated slideInUp delay" alt="Responsive image">
+          </div>
+    
+    <!-- Akhir Image -->
+    
+    <!-- Background -->
+    
+    <!-- Song List -->
+    <div class="table-responsive songlist" >
+        <h1>Top songs</h1>
+        <table class="table table-borderless animated bounceInUp delay" style="line-height:50px;">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col"></th>
+                    <th scope="col">Track</th>
+                    <th scope="col">Album</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Add</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">01</th>
+                    <td><img class="img-fluid" src="img/RollingPapers.png"/></td>
+                    <td style="line-height:150%"><b>Wiz Khalifa</b><br>Rolling Papers</td>
+                    <td>Rolling papers</td>
+                    <td>4:21</td>
+                    <td><img class="img-fluid" src="img/heart.png"/></td>
+                </tr>
+                <tr>
+                    <th scope="row">02</th>
+                    <td><img class="img-fluid" src="img/music-icon/220px-Coldplay_-_Ghost_Stories.png"/></td>
+                    <td style="line-height:150%"><b>Cold Play</b><br>Fix You </td>
+                    <td>Ghost</td>
+                    <td>5:10</td>
+                    <td><img class="img-fluid" src="img/heartActive.png"/></td>
+                </tr>
+                <tr>
+                    <th scope="row">03</th>
+                    <td><img class="img-fluid" src="img/music-icon/Aerosmith_-_Permanent_Vacation.png"/></td>
+                    <td style="line-height:150%"><b>Aerosmith</b><br>Permanent</td>
+                    <td>Vacation</td>
+                    <td>4:20</td>
+                    <td><img class="img-fluid" src="img/heart.png"/></td>
+                </tr>
+                <tr>
+                        <th scope="row">04</th>
+                        <td><img class="img-fluid" src="img/music-icon/Tillithurtscover.png"/></td>
+                        <td style="line-height:150%"><b>Yellow Claw</b><br>Till it Hurts</td>
+                        <td>Yellow Gang</td>
+                        <td>3:10</td>
+                        <td><img class="img-fluid" src="img/heart.png"/></td>
+                </tr>
+                <tr>
+                        <th scope="row">05</th>
+                        <td><img class="img-fluid" src="img/music-icon/220px-Coldplayparachutesalbumcover.png"/></td>
+                        <td style="line-height:150%"><b>Cold Play</b><br>Viva La Vida</td>
+                        <td>Parachutesa</td>
+                        <td>3:40</td>
+                        <td><img class="img-fluid" src="img/heart.png"/></td>
+                </tr>
+
+                </tbody>
+            </table>
+            
+        </div>
+    <!-- Akhir Song List -->
+
+
+    <!-- Card Top Song -->
+    
+    <section class="top-movies">
+            <div class="section-content">
+                <h1 class='top-movies__title'>New Albums</h1>
+        
+                <article class="card">
+                    <a href="#" class="card__link">
+                        <span class="highlight"></span>
+                        <img src="img/coldplayalbums.png" alt="Mad Max: Fury Road" class="card__image" />
+                    </a>
+                    <h2 class='card__title'>Parachutesa</h2>
+                </article>
+                <article class="card">
+                    <a href="#" class="card__link">
+                        <span class="highlight"></span>
+                        <img src="img/thebeatles.png" alt="Avengers: Age of Ultron" class="card__image" />
+                    </a>
+                    <h2 class='card__title'>Abbey Roads</h2>
+                </article>
+                <article class="card">
+                    <a href="#" class="card__link">
+                        <span class="highlight"></span>
+                        <img src="img/RollingPaperscard.png" alt="Furious 7" class="card__image" />
+                    </a>
+                    <h2 class='card__title'>Rolling Pappers</h2>
+                </article>
+                <article class="card">
+                        <a href="#" class="card__link">
+                            <span class="highlight"></span>
+                            <img src="img/220px-Coldplay_-_Ghost_Stories.png" alt="Furious 7" class="card__image" />
+                        </a>
+                        <h2 class='card__title'>Ghost</h2>
+                    </article>
+                <article class="card">
+                            <a href="#" class="card__link">
+                                <span class="highlight"></span>
+                                <img src="img/Aerosmith_-_Permanent_Vacation.png" alt="Furious 7" class="card__image" />
+                            </a>
+                            <h2 class='card__title'>Vacation</h2>
+                </article>
+            </div>
+        </section>
+
+    <!-- Akhir top song -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
