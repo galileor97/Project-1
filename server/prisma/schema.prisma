@@ -1,0 +1,39 @@
+datasource postgres {
+  provider = "postgresql"
+  url      = env("POSTGRESQL_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Team {
+  balance      Float?
+  createdAt    DateTime @default(now())
+  id           String   @id @default(cuid())
+  name         String
+  roster       User[]
+  seasonPoints Int
+  updatedAt    DateTime @updatedAt
+  Scrim        Scrim[]
+}
+
+model User {
+  createdAt DateTime @default(now())
+  firstName String?
+  id        String   @id @default(cuid())
+  lastName  String?
+  password  String
+  roles     String[]
+  team      Team[]
+  updatedAt DateTime @updatedAt
+  username  String   @unique
+}
+
+model Scrim {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  team1     Team     @relation(fields: [teamId], references: [id])
+  updatedAt DateTime @updatedAt
+  teamId    String
+}
